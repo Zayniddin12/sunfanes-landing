@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Information — SHINKA</title>
+  <meta name="description" content="Thoughtful places to stay that bring travelers closer to local atmosphere, everyday culture and Japanese hospitality.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&family=Lexend:wght@500&family=Noto+Serif:wght@700&family=Space+Grotesk:wght@700&family=Inter:wght@700&family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="components/post-card/post-card.css">
+  <link rel="stylesheet" href="components/header/header.css">
+  <link rel="stylesheet" href="components/biz-banner/biz-banner.css">
+  <link rel="stylesheet" href="components/tg-intro/tg-intro.css">
+  <link rel="stylesheet" href="components/tg-list/tg-list.css">
+  <link rel="stylesheet" href="components/footer/footer.css">
+</head>
+<body>
+
+<!-- Component: header -->
+<header class="site-header" data-component="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html#top" aria-label="SHINKA — top">
+      <img src="assets/images/logo.png" alt="心加 Shinka" width="146" height="64">
+    </a>
+
+    <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-header__nav" id="site-nav" aria-label="Main">
+      <ul class="site-nav">
+        <li class="site-nav__item"><a class="site-nav__link" href="index.html#top">TOP</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="concept.html">Concept</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="virtual-human.html">Virtual Human</a></li>
+        <li class="site-nav__item site-nav__item--has-sub">
+          <button class="site-nav__link site-nav__link--btn" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Businesses</span>
+            <img src="assets/icons/arrow-down.svg" alt="" width="18" height="18">
+          </button>
+          <ul class="site-nav__sub">
+            <li><a href="vacation-rental.html">Vacation Rentals &amp; Accommodation</a></li>
+            <li><a href="media-business.html">Media Business</a></li>
+            <li><a href="e-commerce.html">E-Commerce Business</a></li>
+            <li><a href="vacation-rental-management.html">Vacation Rental Management</a></li>
+          </ul>
+        </li>
+        <li class="site-nav__item"><a class="site-nav__link" href="culture-column.html">Culture Column</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="travel-guide.html">Travel Guide</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="events.html">Events</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="news-list.html">News</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="company-information.html">Company Information</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Component: tg-banner (Travel Information title block with breadcrumb; styles from biz-banner) -->
+<section class="biz-banner" data-component="tg-banner">
+  <div class="biz-banner__inner">
+    <p class="biz-banner__crumbs"><a href="index.html#top">TOP</a> / <span>Travel Information</span></p>
+    <div class="biz-banner__head">
+      <h1 class="biz-banner__title">Travel Information</h1>
+      <p class="biz-banner__lead">Explore Japan with clear categories for<br>attractions, dining, and suggested routes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Component: tg-intro (What do you know? — category cards + search) -->
+<section class="tg-intro" data-component="tg-intro">
+  <div class="tg-intro__cats">
+    <h2 class="tg-intro__title">What do you know?</h2>
+    <ul class="tg-intro__cards">
+      <li class="tg-cat">
+        <div class="tg-cat__top">
+          <p class="tg-cat__name">Attractions</p>
+          <img src="assets/icons/tg-tour.svg" alt="" width="59" height="59">
+        </div>
+        <span class="tg-cat__arrow"><img src="assets/icons/tg-arrow.svg" alt="" width="33" height="29"></span>
+      </li>
+      <li class="tg-cat">
+        <div class="tg-cat__top">
+          <p class="tg-cat__name">Food &amp; Dining</p>
+          <img src="assets/icons/tg-sushi.svg" alt="" width="57" height="57">
+        </div>
+        <span class="tg-cat__arrow"><img src="assets/icons/tg-arrow.svg" alt="" width="33" height="29"></span>
+      </li>
+      <li class="tg-cat">
+        <div class="tg-cat__top">
+          <p class="tg-cat__name">Suggested Itineraries</p>
+          <img src="assets/icons/tg-route.svg" alt="" width="56" height="55">
+        </div>
+        <span class="tg-cat__arrow"><img src="assets/icons/tg-arrow.svg" alt="" width="33" height="29"></span>
+      </li>
+    </ul>
+  </div>
+
+  <form class="tg-search" role="search">
+    <img class="tg-search__icon" src="assets/icons/tg-search.svg" alt="" width="16" height="16">
+    <input class="tg-search__input" type="search" name="q" placeholder="キーワードで記事を検索（例: 書道、京都、伝統工芸...）" aria-label="Search articles">
+    <button class="tg-search__btn" type="submit">検索</button>
+  </form>
+</section>
+
+<!-- Component: tg-list (Attractions / Food & Dining / Suggested Itineraries — 6 cards each; uses shared post-card styles) -->
+<section class="tg-list" data-component="tg-list">
+  <div class="tg-list__inner">
+    <section class="tg-sec">
+      <h2 class="tg-sec__title">Attractions</h2>
+      <div class="tg-sec__grid">
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+      </div>
+      <a class="tg-sec__more" href="#">Read more</a>
+    </section>
+
+    <section class="tg-sec">
+      <h2 class="tg-sec__title">Food &amp; Dining</h2>
+      <div class="tg-sec__grid">
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+      </div>
+      <a class="tg-sec__more" href="#">Read more</a>
+    </section>
+
+    <section class="tg-sec">
+      <h2 class="tg-sec__title">Suggested Itineraries</h2>
+      <div class="tg-sec__grid">
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+        <article class="post-card tg-card">
+          <div class="post-card__media"><img src="assets/images/tg-card.jpg" alt="" width="400" height="183" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+            <h3 class="post-card__title"><a class="tg-card__link" href="travel-guide-detail.html">A Gentle First Calligraphy Lesson </a></h3>
+            <p class="post-card__text">How a slow brush stroke can turn an afternoon into a memory you carry home.</p>
+          </div>
+        </article>
+      </div>
+      <a class="tg-sec__more" href="#">Read more</a>
+    </section>
+  </div>
+</section>
+
+<!-- Component: footer -->
+<footer class="site-footer" id="company" data-component="site-footer">
+  <div class="site-footer__container">
+
+    <div class="site-footer__top">
+      <a class="site-footer__logo" href="index.html#top" aria-label="SHINKA — top">
+        <img src="assets/images/footer-logo.png" alt="心加 Shinka">
+      </a>
+
+      <nav class="site-footer__nav" aria-label="Footer">
+        <div class="site-footer__col site-footer__col--main">
+          <a class="site-footer__link" href="concept.html">Concept</a>
+          <a class="site-footer__link" href="virtual-human.html">Virtual Human</a>
+          <a class="site-footer__link" href="news-list.html">News</a>
+          <a class="site-footer__link" href="company-information.html">Company Information</a>
+        </div>
+
+        <div class="site-footer__col site-footer__col--media">
+          <p class="site-footer__link">Media</p>
+          <ul class="site-footer__sub">
+            <li><a href="culture-column.html">Culture Column</a></li>
+            <li><a href="travel-guide.html">Travel Guide</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--business">
+          <p class="site-footer__link">Businesses</p>
+          <ul class="site-footer__sub">
+            <li><a href="vacation-rental.html">Vacation Rentals &amp; Accommodation</a></li>
+            <li><a href="media-business.html">Media Business</a></li>
+            <li><a href="e-commerce.html">E-Commerce Business</a></li>
+            <li><a href="vacation-rental-management.html">Vacation Rental Management</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p class="site-footer__copy">© copyright 2026 shinka Inc.</p>
+      <ul class="site-footer__social">
+        <li><a href="index.html#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="index.html#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="index.html#" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" width="20" height="20"></a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+<script src="components/header/header.js"></script>
+</body>
+</html>

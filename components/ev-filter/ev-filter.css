@@ -1,0 +1,134 @@
+/* Component: ev-filter */
+
+.ev-filter {
+  background: #fff;
+}
+
+.ev-filter__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 60px clamp(20px, 2.78vw, 40px) 0;
+}
+
+.ev-filter__box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 33px;
+  background: var(--color-header-bg);
+  border: 1px solid var(--color-gold);
+  border-radius: 12px;
+}
+
+.ev-filter__cats {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  min-height: 46px;
+}
+
+.ev-filter__label {
+  min-width: 80px;
+  padding-right: 15.98px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.ev-filter__checks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+}
+
+.ev-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.ev-check__box {
+  appearance: none;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  background: #fff;
+  border: 2px solid var(--color-gold);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.ev-check__box:checked {
+  background: var(--color-gold);
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.ev-filter__btn {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 41px;
+  background: #fff;
+  border: 1px solid var(--color-gold);
+  border-radius: 100px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-gold);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.ev-filter__btn:hover {
+  background: var(--color-cream);
+}
+
+.ev-filter__count {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+  color: #000;
+}
+
+@media (max-width: 900px) {
+  .ev-filter__box {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px 20px;
+  }
+
+  .ev-filter__cats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .ev-filter__btn {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .ev-filter__inner {
+    gap: 32px;
+    padding-top: 40px;
+  }
+
+  .ev-filter__count {
+    font-size: 22px;
+  }
+}

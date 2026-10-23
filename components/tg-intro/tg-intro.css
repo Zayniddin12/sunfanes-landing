@@ -1,0 +1,150 @@
+/* Component: tg-intro */
+
+.tg-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 30px clamp(20px, 4.17vw, 60px);
+  background: #fff;
+}
+
+.tg-intro__cats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.tg-intro__title {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-align: center;
+  color: #000;
+}
+
+.tg-intro__cards {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.tg-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  height: 187px;
+  padding: 20px 30px;
+  background: var(--color-header-bg);
+  border: 1px solid var(--color-gold);
+}
+
+/* Middle card only has top/bottom borders — the neighbours' borders divide it */
+.tg-cat:nth-child(2) {
+  border-left: 0;
+  border-right: 0;
+}
+
+.tg-cat__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.tg-cat__name {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #000;
+}
+
+.tg-cat__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 31px;
+}
+
+.tg-cat__arrow img {
+  flex: none;
+  transform: rotate(90deg);
+}
+
+/* Search */
+.tg-search {
+  position: relative;
+  width: 100%;
+  max-width: 576px;
+}
+
+.tg-search__icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.tg-search__input {
+  width: 100%;
+  padding: 10px 97px 11px 41px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: normal;
+  color: #000;
+}
+
+.tg-search__input::placeholder {
+  color: #9ca3af;
+}
+
+.tg-search__btn {
+  position: absolute;
+  top: 2.5px;
+  right: 4px;
+  bottom: 2.5px;
+  padding: 6.5px 16px 7.5px;
+  border: 0;
+  border-radius: 4px;
+  background: #000;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .tg-intro__title {
+    font-size: 26px;
+  }
+
+  .tg-intro__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .tg-cat,
+  .tg-cat:nth-child(2) {
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid var(--color-gold);
+  }
+}

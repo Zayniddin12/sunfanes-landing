@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SHINKA — Stay closer to Japan</title>
+  <meta name="description" content="Thoughtful places to stay that bring travelers closer to local atmosphere, everyday culture and Japanese hospitality.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&family=Lexend:wght@500&family=Noto+Serif:wght@700&family=Space+Grotesk:wght@700&family=Inter:wght@700&family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="components/post-card/post-card.css">
+  <link rel="stylesheet" href="components/header/header.css">
+  <link rel="stylesheet" href="components/hero-slider/hero-slider.css">
+  <link rel="stylesheet" href="components/concept/concept.css">
+  <link rel="stylesheet" href="components/virtual-human/virtual-human.css">
+  <link rel="stylesheet" href="components/business/business.css">
+  <link rel="stylesheet" href="components/culture-column/culture-column.css">
+  <link rel="stylesheet" href="components/travel-guide/travel-guide.css">
+  <link rel="stylesheet" href="components/events/events.css">
+  <link rel="stylesheet" href="components/accommodation/accommodation.css">
+  <link rel="stylesheet" href="components/news/news.css">
+  <link rel="stylesheet" href="components/footer/footer.css">
+</head>
+<body>
+
+<!-- Component: header -->
+<header class="site-header" data-component="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="#top" aria-label="SHINKA — top">
+      <img src="assets/images/logo.png" alt="心加 Shinka" width="146" height="64">
+    </a>
+
+    <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-header__nav" id="site-nav" aria-label="Main">
+      <ul class="site-nav">
+        <li class="site-nav__item"><a class="site-nav__link" href="#top">TOP</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="concept.html">Concept</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="virtual-human.html">Virtual Human</a></li>
+        <li class="site-nav__item site-nav__item--has-sub">
+          <button class="site-nav__link site-nav__link--btn" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Businesses</span>
+            <img src="assets/icons/arrow-down.svg" alt="" width="18" height="18">
+          </button>
+          <ul class="site-nav__sub">
+            <li><a href="vacation-rental.html">Vacation Rentals &amp; Accommodation</a></li>
+            <li><a href="media-business.html">Media Business</a></li>
+            <li><a href="e-commerce.html">E-Commerce Business</a></li>
+            <li><a href="vacation-rental-management.html">Vacation Rental Management</a></li>
+          </ul>
+        </li>
+        <li class="site-nav__item"><a class="site-nav__link" href="culture-column.html">Culture Column</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="travel-guide.html">Travel Guide</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="events.html">Events</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="news-list.html">News</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="company-information.html">Company Information</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Component: hero-slider (3 banners) -->
+<section class="hero-slider" id="top" data-component="hero-slider" aria-roledescription="carousel" aria-label="Featured banners">
+  <div class="hero-slider__track">
+
+    <article class="hero-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+      <div class="hero-slide__bg">
+        <img class="hero-slide__img" src="assets/images/hero-1.jpg" alt="">
+      </div>
+      <img class="hero-slide__overlay" src="assets/images/hero-1-overlay.svg" alt="">
+      <div class="hero-slide__content">
+        <h1 class="hero-slide__title">Stay closer to Japan.</h1>
+        <p class="hero-slide__text">Thoughtful places to stay that bring travelers closer to local atmosphere,<br> everyday culture and Japanese hospitality.</p>
+        <a class="btn btn--hero" href="concept.html">Discover Our Concept</a>
+      </div>
+    </article>
+
+    <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+      <div class="hero-slide__bg">
+        <img class="hero-slide__img" src="assets/images/hero-2.jpg" alt="">
+      </div>
+      <img class="hero-slide__overlay" src="assets/images/hero-2-overlay.svg" alt="">
+      <div class="hero-slide__content">
+        <h2 class="hero-slide__title">Stay closer to Japan.</h2>
+        <p class="hero-slide__text">Thoughtful places to stay that bring travelers closer to local atmosphere,<br> everyday culture and Japanese hospitality.</p>
+        <a class="btn btn--hero" href="#concept" tabindex="-1">Discover Our Concept</a>
+      </div>
+    </article>
+
+    <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+      <div class="hero-slide__bg">
+        <img class="hero-slide__img hero-slide__img--crop" src="assets/images/hero-3.jpg" alt="">
+      </div>
+      <img class="hero-slide__overlay" src="assets/images/hero-3-overlay.svg" alt="">
+      <div class="hero-slide__content">
+        <h2 class="hero-slide__title">Stay closer to Japan.</h2>
+        <p class="hero-slide__text">Thoughtful places to stay that bring travelers closer to local atmosphere,<br> everyday culture and Japanese hospitality.</p>
+        <a class="btn btn--hero" href="#concept" tabindex="-1">Discover Our Concept</a>
+      </div>
+    </article>
+
+  </div>
+
+  <button class="hero-slider__arrow hero-slider__arrow--prev" type="button" aria-label="Previous banner">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="hero-slider__arrow hero-slider__arrow--next" type="button" aria-label="Next banner">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div class="hero-slider__dots" role="tablist" aria-label="Choose banner"></div>
+</section>
+
+<!-- Component: concept -->
+<section class="concept" id="concept" data-component="concept">
+  <div class="concept__inner">
+    <h2 class="concept__heading">Concept</h2>
+
+    <div class="concept__body">
+      <div class="concept__emblem">
+        <img src="assets/images/concept-emblem.png" alt="" width="487" height="474">
+      </div>
+
+      <div class="concept__content">
+        <h3 class="concept__title">Experience the essence of Japan,<br>to your heart’s content.</h3>
+        <p class="concept__text">
+          Travel grows deeper through culture.<br>
+          Togetherness, harmony, charm, atmosphere, and hospitality.<br>
+          Some Japanese traditions can only truly be discovered through all five senses.<br>
+          The sounds of the town, local flavors, and memories of everyday life.<br>
+          Each one becomes a lasting memory you will never forget.<br>
+          We create special experiences that make Japan feel like a home for the heart.
+        </p>
+        <a class="btn concept__btn" href="#virtual-human">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Component: virtual-human -->
+<section class="virtual-human" id="virtual-human" data-component="virtual-human">
+  <h2 class="virtual-human__heading">Your Digital Concierge for <br>Staying in Japan — “SHINKA Concierge”</h2>
+
+  <div class="virtual-human__container">
+    <div class="virtual-human__content">
+      <div class="virtual-human__copy">
+        <p>When you find yourself wondering “What should I do?” during your trip, the SHINKA Concierge is here to help.<br><br>From check-in instructions and nearby recommendations to sudden changes of plan.<br>Leave the little details of your journey to her.</p>
+        <p>The SHINKA Concierge loves hearing about your travels.<br>More than front desk staff, she is like a friend who knows travel well.<br>Feel free to talk to her anytime.</p>
+      </div>
+      <a class="btn virtual-human__btn" href="#businesses">Learn More</a>
+    </div>
+
+    <div class="virtual-human__media">
+      <img src="assets/images/virtual-human.jpg" alt="SHINKA Concierge welcoming guests" width="512" height="282">
+    </div>
+  </div>
+</section>
+
+<!-- Component: business -->
+<section class="business" id="businesses" data-component="business">
+  <div class="business__container">
+    <header class="business__header">
+      <h2 class="business__title">Our Businesses</h2>
+      <p class="business__lead">SHINKA operates four core businesses, combining tradition and comfort to create <br>new value.</p>
+    </header>
+
+    <div class="business__grid">
+
+      <article class="business-card">
+        <div class="business-card__main">
+          <div class="business-card__info">
+            <h3 class="business-card__title">Vacation Rental &amp; Accommodation</h3>
+            <p class="business-card__text">We plan and operate refined whole-house rentals and Japanese-style accommodations, offering special stays where travel and the spirit of Japan come together.</p>
+            <ul class="business-card__tags">
+              <li>一棟貸し</li>
+              <li>和モダン</li>
+              <li>施設開発</li>
+              <li>自社ブランド宿泊</li>
+            </ul>
+          </div>
+          <a class="business-card__link" href="#">
+            <span>Learn More</span>
+            <img src="assets/icons/arrow-right.svg" alt="" width="11" height="6">
+          </a>
+        </div>
+        <div class="business-card__label"><span>STAY</span></div>
+      </article>
+
+      <article class="business-card">
+        <div class="business-card__main">
+          <div class="business-card__info">
+            <h3 class="business-card__title">Media</h3>
+            <p class="business-card__text">We plan, create, and publish web magazine and social content that shares Japanese culture, local charm, and hidden destinations with the world.</p>
+            <ul class="business-card__tags">
+              <li>コラム配信</li>
+              <li>観光案内ガイド</li>
+              <li>SNS運用</li>
+              <li>インバウンド発信</li>
+            </ul>
+          </div>
+          <a class="business-card__link" href="#">
+            <span>Learn More</span>
+            <img src="assets/icons/arrow-right.svg" alt="" width="11" height="6">
+          </a>
+        </div>
+        <div class="business-card__label"><span>MEDIA</span></div>
+      </article>
+
+      <article class="business-card">
+        <div class="business-card__main">
+          <div class="business-card__info">
+            <h3 class="business-card__title">E-Commerce</h3>
+            <p class="business-card__text">An online store offering SHINKA’s original amenities, selected foods, and local crafts that you can enjoy at home.</p>
+            <ul class="business-card__tags">
+              <li>アメニティ</li>
+              <li>特産食品</li>
+              <li>オンラインストア</li>
+              <li>ギフト展開</li>
+            </ul>
+          </div>
+          <a class="business-card__link" href="#">
+            <span>Learn More</span>
+            <img src="assets/icons/arrow-right.svg" alt="" width="11" height="6">
+          </a>
+        </div>
+        <div class="business-card__label"><span>EC</span></div>
+      </article>
+
+      <article class="business-card">
+        <div class="business-card__main">
+          <div class="business-card__info">
+            <h3 class="business-card__title">Vacation Rental Management Support</h3>
+            <p class="business-card__text">For property owners, we provide end-to-end support—from guest acquisition and reservation management to cleaning and multilingual guest service—helping deliver profitable stays and high guest satisfaction.</p>
+            <ul class="business-card__tags">
+              <li>集客サポート</li>
+              <li>予約管理</li>
+              <li>清掃代行</li>
+              <li>ゲスト対応</li>
+            </ul>
+          </div>
+          <a class="business-card__link" href="#">
+            <span>Learn More</span>
+            <img src="assets/icons/arrow-right.svg" alt="" width="11" height="6">
+          </a>
+        </div>
+        <div class="business-card__label"><span>SUPPORT</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Component: culture-column (uses shared post-card styles) -->
+<section class="post-section culture-column" id="culture-column" data-component="culture-column">
+  <header class="post-section__head">
+    <p class="post-section__eyebrow">CULTURE COLUMN</p>
+    <h2 class="post-section__title">Stories that reveal another side of Japan.</h2>
+  </header>
+
+  <div class="post-section__grid">
+    <article class="post-card">
+      <div class="post-card__media"><img src="assets/images/culture-1.jpg" alt=""></div>
+      <div class="post-card__body">
+        <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+        <h3 class="post-card__title">What Is Ōmisoka (大晦日)? Meaning, Traditions, and How Japanese Celebrate New Year’s Eve</h3>
+        <p class="post-card__text">Ōmisoka, or New Year’s Eve in Japan, falls on December 31st and marks one of the most spiritually significant days in the Japanese calendar. </p>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-card__media"><img src="assets/images/culture-2.jpg" alt=""></div>
+      <div class="post-card__body">
+        <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+        <h3 class="post-card__title">冬至 (Tōji) – Winter Solstice in Japan: Embracing the Longest Night</h3>
+        <p class="post-card__text">A Celestial Shift Signifying Light, Renewal, and the Return of Balance<br>Tōji, known as the Winter Solstice in Japan, is more than just an astronomical event—it’s a symbolic ...</p>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-card__media"><img src="assets/images/culture-3.jpg" alt=""></div>
+      <div class="post-card__body">
+        <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+        <h3 class="post-card__title">大雪 (Taisetsu) – Heavy Snow: Japan’s Deep Winter Begins</h3>
+        <p class="post-card__text">Taisetsu is part of the 24 solar terms (二十四節気 / Nijūshi Sekki) used in the traditional East Asian lunisolar calendar. It comes after Shōsetsu (小雪 – Light Snow) and precedes Tōji (冬...</p>
+      </div>
+    </article>
+  </div>
+
+  <a class="btn" href="#">Read more </a>
+</section>
+
+<!-- Component: travel-guide (uses shared post-card styles) -->
+<section class="post-section travel-guide" id="travel-guide" data-component="travel-guide">
+  <header class="post-section__head">
+    <p class="post-section__eyebrow">TRAVEL GUIDE</p>
+    <h2 class="post-section__title">Find the Japan you came hoping to meet.</h2>
+  </header>
+
+  <div class="post-section__grid">
+    <article class="post-card">
+      <div class="post-card__media"><img src="assets/images/travel.png" alt=""></div>
+      <div class="post-card__body">
+        <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+        <h3 class="post-card__title">Your First Calligraphy Experience — A Quiet Moment to Calm the Mind</h3>
+        <p class="post-card__text">Slowly moving the brush across the paper—<br>That simple moment becomes a precious memory that stays with you long after your journey ends.</p>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-card__media"><img src="assets/images/travel.png" alt=""></div>
+      <div class="post-card__body">
+        <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+        <h3 class="post-card__title">Your First Calligraphy Experience — A Quiet Moment to Calm the Mind</h3>
+        <p class="post-card__text">Slowly moving the brush across the paper—<br>That simple moment becomes a precious memory that stays with you long after your journey ends.</p>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-card__media"><img src="assets/images/travel.png" alt=""></div>
+      <div class="post-card__body">
+        <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+        <h3 class="post-card__title">Your First Calligraphy Experience — A Quiet Moment to Calm the Mind</h3>
+        <p class="post-card__text">Slowly moving the brush across the paper—<br>That simple moment becomes a precious memory that stays with you long after your journey ends.</p>
+      </div>
+    </article>
+  </div>
+
+  <a class="btn" href="#">Read more </a>
+</section>
+
+<!-- Component: events (uses shared post-card styles) -->
+<section class="post-section events" id="events" data-component="events">
+  <header class="post-section__head">
+    <p class="post-section__eyebrow">EVENT INFORMATION</p>
+    <h2 class="post-section__title">Meet Japan through real experiences.</h2>
+  </header>
+
+  <div class="post-section__grid">
+    <article class="post-card">
+      <div class="post-card__media"><img src="assets/images/event.jpg" alt=""></div>
+      <div class="post-card__body">
+        <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+        <h3 class="post-card__title"><a href="event-detail.html">our First Calligraphy Experience — A Quiet Moment to Calm the Mind</a></h3>
+        <p class="post-card__text">Slowly moving the brush across the paper— That simple moment becomes a precious memory that stays with you long after your journey ends.</p>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-card__media"><img src="assets/images/event.jpg" alt=""></div>
+      <div class="post-card__body">
+        <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+        <h3 class="post-card__title"><a href="event-detail.html">our First Calligraphy Experience — A Quiet Moment to Calm the Mind</a></h3>
+        <p class="post-card__text">Slowly moving the brush across the paper— That simple moment becomes a precious memory that stays with you long after your journey ends.</p>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-card__media"><img src="assets/images/event.jpg" alt=""></div>
+      <div class="post-card__body">
+        <div class="post-card__tags"><span class="post-card__tag">news</span><span class="post-card__tag">news</span><span class="post-card__tag">news</span></div>
+        <h3 class="post-card__title"><a href="event-detail.html">our First Calligraphy Experience — A Quiet Moment to Calm the Mind</a></h3>
+        <p class="post-card__text">Slowly moving the brush across the paper— That simple moment becomes a precious memory that stays with you long after your journey ends.</p>
+      </div>
+    </article>
+  </div>
+
+  <a class="btn" href="#">Read more </a>
+</section>
+
+<!-- Component: accommodation -->
+<section class="accommodation" id="accommodation" data-component="accommodation">
+  <h2 class="accommodation__title">Accommodation</h2>
+
+  <div class="accommodation__list">
+
+    <article class="property property--text-first">
+      <div class="property__content">
+        <h3 class="property__name">SHINKA Osaka Namba — Up to 8 guests. <br>The ultimate luxury.</h3>
+        <p class="property__text">A spacious bath that feels almost like an onsen. Relax together in the open living room after a day of travel. Within walking distance of Namba.&nbsp; Make group travel even more comfortable.<br><br><strong>Location: 1-10-1 Inari, Naniwa-ku, Osaka<br>Access: 15-minute walk from JR Namba Station (South Exit)</strong></p>
+        <a class="btn property__btn" href="#">View Property</a>
+      </div>
+      <div class="property__media">
+        <img src="assets/images/accommodation-1.jpg" alt="SHINKA Osaka Namba bedroom">
+      </div>
+    </article>
+
+    <article class="property property--media-first">
+      <div class="property__media">
+        <img src="assets/images/accommodation-2.jpg" alt="SHINKA Osaka Hanazonocho living room">
+      </div>
+      <div class="property__content">
+        <h3 class="property__name">SHINKA Osaka Hanazonocho — <br>Live in the charm of Japan.</h3>
+        <p class="property__text">From the moment you open the door, you are surrounded by the charm of Japan. Soak in the bath, talk in a Japanese-style room, and sleep in a comfortable bedroom.<br>After a full day exploring Osaka, unwind slowly in a private house.<br><br><strong>Location: 1-10-25 Hanazono Minami, Nishinari-ku, Osaka<br>Access: 4-minute walk from Hanazonocho Station (Exit 3-B), Osaka Metro Yotsubashi Line</strong></p>
+        <a class="btn property__btn" href="#">View Property</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- Component: news -->
+<section class="news" id="news" data-component="news">
+  <h2 class="news__title">News</h2>
+
+  <ul class="news__list">
+    <li class="news__item">
+      <a class="news__link" href="news-detail.html">
+        <time class="news__date" datetime="2023-05-23">2023/05/23</time>
+        <span class="news__text">夏の訪日客に向け、英語の到着ガイド（Arrival Guide）を更新いたしました。</span>
+        <img class="news__arrow" src="assets/icons/news-arrow.svg" alt="" width="28" height="28">
+      </a>
+    </li>
+    <li class="news__item">
+      <a class="news__link" href="news-detail.html">
+        <time class="news__date" datetime="2023-05-23">2023/05/23</time>
+        <span class="news__text">夏の訪日客に向け、英語の到着ガイド（Arrival Guide）を更新いたしました。</span>
+        <img class="news__arrow" src="assets/icons/news-arrow.svg" alt="" width="28" height="28">
+      </a>
+    </li>
+    <li class="news__item">
+      <a class="news__link" href="news-detail.html">
+        <time class="news__date" datetime="2023-05-23">2023/05/23</time>
+        <span class="news__text">夏の訪日客に向け、英語の到着ガイド（Arrival Guide）を更新いたしました。</span>
+        <img class="news__arrow" src="assets/icons/news-arrow.svg" alt="" width="28" height="28">
+      </a>
+    </li>
+    <li class="news__item">
+      <a class="news__link" href="news-detail.html">
+        <time class="news__date" datetime="2023-05-23">2023/05/23</time>
+        <span class="news__text">夏の訪日客に向け、英語の到着ガイド（Arrival Guide）を更新いたしました。</span>
+        <img class="news__arrow" src="assets/icons/news-arrow.svg" alt="" width="28" height="28">
+      </a>
+    </li>
+    <li class="news__item">
+      <a class="news__link" href="news-detail.html">
+        <time class="news__date" datetime="2023-05-23">2023/05/23</time>
+        <span class="news__text">夏の訪日客に向け、英語の到着ガイド（Arrival Guide）を更新いたしました。</span>
+        <img class="news__arrow" src="assets/icons/news-arrow.svg" alt="" width="28" height="28">
+      </a>
+    </li>
+  </ul>
+
+  <a class="btn" href="#">Read more </a>
+</section>
+
+<!-- Component: footer -->
+<footer class="site-footer" id="company" data-component="site-footer">
+  <div class="site-footer__container">
+
+    <div class="site-footer__top">
+      <a class="site-footer__logo" href="#top" aria-label="SHINKA — top">
+        <img src="assets/images/footer-logo.png" alt="心加 Shinka">
+      </a>
+
+      <nav class="site-footer__nav" aria-label="Footer">
+        <div class="site-footer__col site-footer__col--main">
+          <a class="site-footer__link" href="concept.html">Concept</a>
+          <a class="site-footer__link" href="virtual-human.html">Virtual Human</a>
+          <a class="site-footer__link" href="news-list.html">News</a>
+          <a class="site-footer__link" href="company-information.html">Company Information</a>
+        </div>
+
+        <div class="site-footer__col site-footer__col--media">
+          <p class="site-footer__link">Media</p>
+          <ul class="site-footer__sub">
+            <li><a href="culture-column.html">Culture Column</a></li>
+            <li><a href="travel-guide.html">Travel Guide</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--business">
+          <p class="site-footer__link">Businesses</p>
+          <ul class="site-footer__sub">
+            <li><a href="vacation-rental.html">Vacation Rentals &amp; Accommodation</a></li>
+            <li><a href="media-business.html">Media Business</a></li>
+            <li><a href="e-commerce.html">E-Commerce Business</a></li>
+            <li><a href="vacation-rental-management.html">Vacation Rental Management</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p class="site-footer__copy">© copyright 2026 shinka Inc.</p>
+      <ul class="site-footer__social">
+        <li><a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="#" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" width="20" height="20"></a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+<script src="components/header/header.js"></script>
+<script src="components/hero-slider/hero-slider.js"></script>
+</body>
+</html>

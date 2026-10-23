@@ -1,0 +1,136 @@
+/* Shared: post-section + post-card (Culture Column / Travel Guide / Events)
+   Each section sets its own look through custom properties:
+   --ps-bg, --ps-py, --ps-px, --ps-grid, --ps-img */
+
+.post-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: var(--ps-py) var(--ps-px);
+  background: var(--ps-bg);
+}
+
+.post-section__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+
+.post-section__eyebrow {
+  font-size: 12px;
+  color: var(--color-gold-dark);
+}
+
+.post-section__title {
+  font-size: 24px;
+  color: #000;
+}
+
+.post-section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 36px;
+  width: 100%;
+  max-width: var(--ps-grid);
+}
+
+/* Card */
+.post-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.post-card__media {
+  height: var(--ps-img);
+}
+
+.post-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid var(--color-card-border);
+}
+
+.post-card__tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.post-card__tag {
+  padding: 4px 10px 6px;
+  background: var(--color-gold);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-align: justify;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.post-card__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+  color: #000;
+}
+
+.post-card__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+  color: #000;
+}
+
+@media (max-width: 900px) {
+  .post-section {
+    gap: 36px;
+    padding-left: clamp(16px, 5vw, 40px);
+    padding-right: clamp(16px, 5vw, 40px);
+  }
+
+  .post-section__grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-section {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .post-section__title {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .post-card__body {
+    padding: 16px;
+  }
+
+  .post-card__title,
+  .post-card__text {
+    font-size: 15px;
+  }
+}

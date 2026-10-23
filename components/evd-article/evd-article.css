@@ -1,0 +1,14 @@
+/* Component: evd-article — reuses cd-article + tgd-article; only the event card meta lines are new */
+
+
+.tgd-related .post-card__title {
+  font-size: 18px;
+  letter-spacing: 0.9px;
+}
+
+.evd-meta {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+  color: #000;
+}

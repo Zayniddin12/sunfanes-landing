@@ -1,0 +1,148 @@
+/* Component: promise */
+
+.promise {
+  padding: 100px 20px;
+  background: var(--color-cream);
+}
+
+.promise__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+.promise__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  color: #2c3b3a;
+}
+
+.promise__title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 43.75px;
+  letter-spacing: -1.75px;
+}
+
+.promise__lead {
+  max-width: 662px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29.25px;
+}
+
+.promise__list {
+  display: grid;
+  grid-template-columns: repeat(5, 230px);
+  padding: 20px 0;
+}
+
+.promise-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 40px 20px;
+  background: #fff;
+  border: solid var(--color-gold);
+  border-width: 1px 0 1px 1px;
+  text-align: center;
+}
+
+.promise-card:last-child {
+  border-right-width: 1px;
+}
+
+.promise-card--tint {
+  background: var(--color-header-bg);
+}
+
+.promise-card__no {
+  position: relative;
+  padding-bottom: 15px;
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  color: var(--color-gold);
+}
+
+.promise-card__no::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 30px;
+  height: 1px;
+  background: var(--color-gold);
+  transform: translateX(-50%);
+}
+
+.promise-card__title {
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #c2c2c5;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  color: #000;
+}
+
+.promise-card__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #000;
+}
+
+@media (max-width: 1200px) {
+  .promise__list {
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    max-width: 780px;
+    gap: 0;
+  }
+
+  .promise-card {
+    grid-column: span 2;
+    border-width: 1px;
+    margin: 0 0 -1px -1px;
+  }
+
+  .promise-card:nth-child(n+4) {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .promise {
+    padding: 64px 20px;
+  }
+
+  .promise__title {
+    font-size: 30px;
+    letter-spacing: -0.5px;
+  }
+
+  .promise__lead {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .promise__list {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 420px;
+  }
+
+  .promise-card,
+  .promise-card:nth-child(n+4) {
+    grid-column: auto;
+  }
+}

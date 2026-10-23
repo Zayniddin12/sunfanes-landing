@@ -1,0 +1,166 @@
+/* Component: tgd-article — layout comes from cd-article.css, this file only holds the differences */
+
+.tgd-banner .biz-banner__head {
+  max-width: 650px;
+}
+
+/* Hero sits on a #f8f3ee background */
+[data-component='tgd-article'] .cd-article__hero {
+  background: #f8f3ee;
+}
+
+[data-component='tgd-article'] .cd-article__date {
+  font-weight: 400;
+}
+
+/* Pager has 30px extra top space */
+[data-component='tgd-article'] .cd-pager {
+  padding-top: 30px;
+}
+
+/* PDF + share row */
+.tgd-actions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.tgd-pdf {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  background: var(--color-gold);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.tgd-pdf:hover {
+  opacity: 0.88;
+}
+
+.tgd-share {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.tgd-share__label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.tgd-share__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tgd-share__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.tgd-share__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.tgd-share__icon--x {
+  background: #000;
+}
+
+.tgd-share__icon--fb {
+  background: #1877f2;
+}
+
+.tgd-share__icon--link {
+  background: var(--color-border);
+}
+
+.tgd-share__name {
+  font-size: 10px;
+  line-height: 15px;
+  color: var(--color-muted);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tgd-share__item:hover .tgd-share__icon {
+  opacity: 0.8;
+}
+
+/* Related guides */
+.tgd-related {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.tgd-related__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 1.8px;
+  color: #000;
+}
+
+.tgd-related__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+  align-items: start;
+}
+
+.tgd-related .post-card__media {
+  height: 183px;
+}
+
+.tgd-related .post-card__body {
+  justify-content: center;
+  min-height: 189px;
+}
+
+@media (max-width: 768px) {
+  .tgd-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tgd-share {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .tgd-related__title {
+    font-size: 26px;
+  }
+
+  .tgd-related__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+}

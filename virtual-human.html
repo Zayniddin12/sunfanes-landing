@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Human — SHINKA</title>
+  <meta name="description" content="Thoughtful places to stay that bring travelers closer to local atmosphere, everyday culture and Japanese hospitality.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&family=Lexend:wght@500&family=Noto+Serif:wght@700&family=Space+Grotesk:wght@700&family=Inter:wght@700&family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="components/post-card/post-card.css">
+  <link rel="stylesheet" href="components/header/header.css">
+  <link rel="stylesheet" href="components/page-banner/page-banner.css">
+  <link rel="stylesheet" href="components/vh-about/vh-about.css">
+  <link rel="stylesheet" href="components/vh-role/vh-role.css">
+  <link rel="stylesheet" href="components/vh-story/vh-story.css">
+  <link rel="stylesheet" href="components/vh-profile/vh-profile.css">
+  <link rel="stylesheet" href="components/footer/footer.css">
+</head>
+<body>
+
+<!-- Component: header -->
+<header class="site-header" data-component="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html#top" aria-label="SHINKA — top">
+      <img src="assets/images/logo.png" alt="心加 Shinka" width="146" height="64">
+    </a>
+
+    <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-header__nav" id="site-nav" aria-label="Main">
+      <ul class="site-nav">
+        <li class="site-nav__item"><a class="site-nav__link" href="index.html#top">TOP</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="concept.html">Concept</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="virtual-human.html">Virtual Human</a></li>
+        <li class="site-nav__item site-nav__item--has-sub">
+          <button class="site-nav__link site-nav__link--btn" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Businesses</span>
+            <img src="assets/icons/arrow-down.svg" alt="" width="18" height="18">
+          </button>
+          <ul class="site-nav__sub">
+            <li><a href="vacation-rental.html">Vacation Rentals &amp; Accommodation</a></li>
+            <li><a href="media-business.html">Media Business</a></li>
+            <li><a href="e-commerce.html">E-Commerce Business</a></li>
+            <li><a href="vacation-rental-management.html">Vacation Rental Management</a></li>
+          </ul>
+        </li>
+        <li class="site-nav__item"><a class="site-nav__link" href="culture-column.html">Culture Column</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="travel-guide.html">Travel Guide</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="events.html">Events</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="news-list.html">News</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="company-information.html">Company Information</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Component: vh-banner (page-banner with lead text) -->
+<section class="page-banner page-banner--bottom" data-component="vh-banner">
+  <div class="page-banner__bg">
+    <img src="assets/images/vh-banner.png" alt="" width="1600" height="1067">
+  </div>
+  <div class="page-banner__inner">
+    <p class="page-banner__crumbs"><a href="index.html#top">TOP</a> <span>/</span> <span aria-current="page">Virtual Human</span></p>
+    <h1 class="page-banner__title">Virtual Human (VH) Introduction</h1>
+    <p class="page-banner__lead">Meet SHINKA's AI virtual human, working as a public relations representative. She connects SHINKA's social media, Japanese culture articles, on-site reporting, brand website, and accommodations.</p>
+  </div>
+</section>
+
+<!-- Component: vh-about -->
+<section class="vh-about" data-component="vh-about">
+  <div class="vh-about__inner">
+    <div class="vh-about__media">
+      <img src="assets/images/vh-kokoro.png" alt="Kokoro Karo, SHINKA's virtual human, in a kimono" width="379" height="455">
+    </div>
+    <div class="vh-about__content">
+      <h2 class="vh-title">Meet Kokoro Karo</h2>
+      <h3 class="vh-subtitle">A friendly companion who explores questions with travelers and shares the wonders of Japan.</h3>
+      <div class="vh-text">
+        <p>Kokoro Karo isn't a teacher who claims to know everything about Japan. Instead, she's more like a friend who helps travelers find answers and discover what makes Japan so fascinating.</p>
+        <p>Rather than simply promoting SHINKA, she focuses on helping visitors discover Japan and enjoy their journeys, offering a friendly presence along the way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Component: vh-role (Kokoro Karo's Role — 3 cards) -->
+<section class="vh-role" data-component="vh-role">
+  <div class="vh-role__inner">
+    <h2 class="vh-role__title">Kokoro Karo's Role</h2>
+
+    <ul class="vh-role__list">
+      <li class="vh-role-card">
+        <p class="vh-role-card__no">01</p>
+        <h3 class="vh-role-card__title">Connecting People and Stories</h3>
+        <p class="vh-role-card__text">Through social media, Japanese culture articles, local reporting, the brand website, and accommodations, Kokoro Karo connects SHINKA's different activities and shares their stories across multiple channels.</p>
+      </li>
+      <li class="vh-role-card">
+        <p class="vh-role-card__no">02</p>
+        <h3 class="vh-role-card__title">A Friendly Travel Companion</h3>
+        <p class="vh-role-card__text">Rather than being a teacher with all the answers, she explores questions together with travelers and shares the excitement of new discoveries, just like a friend traveling alongside them.</p>
+      </li>
+      <li class="vh-role-card">
+        <p class="vh-role-card__no">03</p>
+        <h3 class="vh-role-card__title">Sharing the Joy of Discovering Japan</h3>
+        <p class="vh-role-card__text">Instead of focusing only on promoting SHINKA's services, she introduces lesser-known Japanese traditions, local destinations, and the unique experiences that make traveling in Japan so special.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Component: vh-story -->
+<section class="vh-story" data-component="vh-story">
+  <div class="vh-story__inner">
+    <div class="vh-story__content">
+      <h2 class="vh-title">The Story Behind Kokoro Karo</h2>
+      <h3 class="vh-subtitle">Sharing the hidden wonders of Japan and helping travelers find answers along the way.</h3>
+      <div class="vh-text">
+        <p>Through welcoming international guests, SHINKA realized that many aspects of Japanese culture, local communities, people, and technologies remain relatively unknown. Travelers also often encounter things they don't know or understand.</p>
+        <p>To help bridge this gap, SHINKA began sharing Japanese cultural stories through online media, social platforms, and local reporting.<br>Kokoro Karo was created to bring these activities to life through friendly, personal communication.</p>
+      </div>
+    </div>
+    <div class="vh-story__media">
+      <img src="assets/images/vh-story.png" alt="Kimono-clad figure among spring cherry blossoms" width="616" height="432">
+    </div>
+  </div>
+</section>
+
+<!-- Component: vh-profile -->
+<section class="vh-profile" data-component="vh-profile">
+  <div class="vh-profile__inner">
+    <div class="vh-profile__media">
+      <img src="assets/images/vh-profile.png" alt="Portrait of Kokoro Karo" width="382" height="318">
+    </div>
+    <div class="vh-profile__content">
+      <h2 class="vh-title vh-profile__title">Profile</h2>
+      <dl class="vh-profile__table">
+        <div class="vh-profile__row">
+          <dt>Name</dt>
+          <dd class="vh-profile__name">心 カロ（Kokoro Karo）</dd>
+        </div>
+        <div class="vh-profile__row">
+          <dt>Company</dt>
+          <dd>SHINKA Inc.</dd>
+        </div>
+        <div class="vh-profile__row">
+          <dt>Role</dt>
+          <dd>Public Relations</dd>
+        </div>
+        <div class="vh-profile__row">
+          <dt>Based in</dt>
+          <dd>Osaka, Japan</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- Component: footer -->
+<footer class="site-footer" id="company" data-component="site-footer">
+  <div class="site-footer__container">
+
+    <div class="site-footer__top">
+      <a class="site-footer__logo" href="index.html#top" aria-label="SHINKA — top">
+        <img src="assets/images/footer-logo.png" alt="心加 Shinka">
+      </a>
+
+      <nav class="site-footer__nav" aria-label="Footer">
+        <div class="site-footer__col site-footer__col--main">
+          <a class="site-footer__link" href="concept.html">Concept</a>
+          <a class="site-footer__link" href="virtual-human.html">Virtual Human</a>
+          <a class="site-footer__link" href="news-list.html">News</a>
+          <a class="site-footer__link" href="company-information.html">Company Information</a>
+        </div>
+
+        <div class="site-footer__col site-footer__col--media">
+          <p class="site-footer__link">Media</p>
+          <ul class="site-footer__sub">
+            <li><a href="culture-column.html">Culture Column</a></li>
+            <li><a href="travel-guide.html">Travel Guide</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--business">
+          <p class="site-footer__link">Businesses</p>
+          <ul class="site-footer__sub">
+            <li><a href="vacation-rental.html">Vacation Rentals &amp; Accommodation</a></li>
+            <li><a href="media-business.html">Media Business</a></li>
+            <li><a href="e-commerce.html">E-Commerce Business</a></li>
+            <li><a href="vacation-rental-management.html">Vacation Rental Management</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p class="site-footer__copy">© copyright 2026 shinka Inc.</p>
+      <ul class="site-footer__social">
+        <li><a href="index.html#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="index.html#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="index.html#" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" width="20" height="20"></a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+<script src="components/header/header.js"></script>
+</body>
+</html>

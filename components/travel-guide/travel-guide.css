@@ -1,0 +1,9 @@
+/* Component: travel-guide (extends shared post-section) */
+
+.travel-guide {
+  --ps-bg: var(--color-ivory);
+  --ps-py: 50px;
+  --ps-px: clamp(16px, 3.55vw, 51px);
+  --ps-grid: 1179px;
+  --ps-img: 200px;
+}

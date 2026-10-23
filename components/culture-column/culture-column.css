@@ -1,0 +1,9 @@
+/* Component: culture-column (extends shared post-section) */
+
+.culture-column {
+  --ps-bg: var(--color-cream);
+  --ps-py: 51px;
+  --ps-px: clamp(16px, 5.2vw, 75px);
+  --ps-grid: 1141px;
+  --ps-img: 200px;
+}

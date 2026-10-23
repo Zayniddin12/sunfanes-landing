@@ -1,0 +1,50 @@
+/* Component: concept-intro */
+
+.concept-intro {
+  padding: 100px 20px;
+  background: var(--color-cream);
+}
+
+.concept-intro__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 726px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.concept-intro__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.2;
+  letter-spacing: 1.75px;
+  color: #000;
+}
+
+.concept-intro__text {
+  max-width: 662px;
+  padding-top: 29px; /* empty first line in Figma */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29.25px;
+  color: #2c3b3a;
+}
+
+@media (max-width: 768px) {
+  .concept-intro {
+    padding: 64px 20px;
+  }
+
+  .concept-intro__title {
+    font-size: 26px;
+    letter-spacing: 1.3px;
+  }
+
+  .concept-intro__text {
+    padding-top: 0;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}

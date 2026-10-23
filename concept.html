@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Concept — SHINKA</title>
+  <meta name="description" content="Thoughtful places to stay that bring travelers closer to local atmosphere, everyday culture and Japanese hospitality.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&family=Lexend:wght@500&family=Noto+Serif:wght@700&family=Space+Grotesk:wght@700&family=Inter:wght@700&family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="components/post-card/post-card.css">
+  <link rel="stylesheet" href="components/header/header.css">
+  <link rel="stylesheet" href="components/page-banner/page-banner.css">
+  <link rel="stylesheet" href="components/concept-intro/concept-intro.css">
+  <link rel="stylesheet" href="components/concept-story/concept-story.css">
+  <link rel="stylesheet" href="components/promise/promise.css">
+  <link rel="stylesheet" href="components/footer/footer.css">
+</head>
+<body>
+
+<!-- Component: header -->
+<header class="site-header" data-component="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="index.html#top" aria-label="SHINKA — top">
+      <img src="assets/images/logo.png" alt="心加 Shinka" width="146" height="64">
+    </a>
+
+    <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-header__nav" id="site-nav" aria-label="Main">
+      <ul class="site-nav">
+        <li class="site-nav__item"><a class="site-nav__link" href="index.html#top">TOP</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="concept.html">Concept</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="virtual-human.html">Virtual Human</a></li>
+        <li class="site-nav__item site-nav__item--has-sub">
+          <button class="site-nav__link site-nav__link--btn" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Businesses</span>
+            <img src="assets/icons/arrow-down.svg" alt="" width="18" height="18">
+          </button>
+          <ul class="site-nav__sub">
+            <li><a href="vacation-rental.html">Vacation Rentals &amp; Accommodation</a></li>
+            <li><a href="media-business.html">Media Business</a></li>
+            <li><a href="e-commerce.html">E-Commerce Business</a></li>
+            <li><a href="vacation-rental-management.html">Vacation Rental Management</a></li>
+          </ul>
+        </li>
+        <li class="site-nav__item"><a class="site-nav__link" href="culture-column.html">Culture Column</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="travel-guide.html">Travel Guide</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="events.html">Events</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="news-list.html">News</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="company-information.html">Company Information</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Component: page-banner (inner-page title banner with breadcrumb) -->
+<section class="page-banner" data-component="page-banner">
+  <div class="page-banner__bg">
+    <img src="assets/images/concept-banner.png" alt="" width="2172" height="724">
+  </div>
+  <div class="page-banner__inner">
+    <p class="page-banner__crumbs"><a href="index.html#top">TOP</a> <span>/</span> <span>Concept</span></p>
+    <h1 class="page-banner__title">Concept</h1>
+  </div>
+</section>
+
+<!-- Component: concept-intro -->
+<section class="concept-intro" data-component="concept-intro">
+  <div class="concept-intro__inner">
+    <h2 class="concept-intro__title">Sharing the wonder of Japanese tradition with the world.</h2>
+    <p class="concept-intro__text">More than simply visiting famous attractions, we create experiences that let the beauty of Japan stay in your heart.</p>
+  </div>
+</section>
+
+<!-- Component: concept-story -->
+<section class="concept-story" data-component="concept-story">
+  <div class="concept-story__inner">
+    <div class="concept-story__media">
+      <img src="assets/images/concept-stay.jpg" alt="Dining table in a refined Japanese-style vacation rental" width="643" height="418">
+    </div>
+    <div class="concept-story__content">
+      <h2 class="concept-story__title">A new perspective on vacation rentals. A refined Japanese experience.</h2>
+      <div class="concept-story__text">
+        <p>Your journey through Japan doesn't end when you arrive at your accommodation.</p>
+        <p>Spend your days surrounded by the beauty of Japanese design and culture.</p>
+        <p>SHINKA offers a new kind of vacation rental experience, where the stay itself becomes a memorable part of your journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Component: promise (The SHINKA Promise — 5 cards) -->
+<section class="promise" data-component="promise">
+  <div class="promise__inner">
+    <header class="promise__head">
+      <h2 class="promise__title">The SHINKA Promise</h2>
+      <p class="promise__lead">Five promises to help you feel comfortable and confident throughout your stay.</p>
+    </header>
+
+    <ul class="promise__list">
+      <li class="promise-card">
+        <p class="promise-card__no">PROMISE 01</p>
+        <h3 class="promise-card__title">Cleanliness</h3>
+        <p class="promise-card__text">A space so clean, you'll want to relax barefoot.</p>
+      </li>
+      <li class="promise-card promise-card--tint">
+        <p class="promise-card__no">PROMISE 02</p>
+        <h3 class="promise-card__title">Honesty</h3>
+        <p class="promise-card__text">We promise peace of mind, just as shown in the photos.</p>
+      </li>
+      <li class="promise-card">
+        <p class="promise-card__no">PROMISE 03</p>
+        <h3 class="promise-card__title">Quality</h3>
+        <p class="promise-card__text">A stay you'll be glad you chose, every time.</p>
+      </li>
+      <li class="promise-card promise-card--tint">
+        <p class="promise-card__no">PROMISE 04</p>
+        <h3 class="promise-card__title">Clarity</h3>
+        <p class="promise-card__text">Clear guidance, even for first-time guests.</p>
+      </li>
+      <li class="promise-card">
+        <p class="promise-card__no">PROMISE 05</p>
+        <h3 class="promise-card__title">Hospitality</h3>
+        <p class="promise-card__text">Thoughtful hospitality, offered from the heart.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Component: footer -->
+<footer class="site-footer" id="company" data-component="site-footer">
+  <div class="site-footer__container">
+
+    <div class="site-footer__top">
+      <a class="site-footer__logo" href="index.html#top" aria-label="SHINKA — top">
+        <img src="assets/images/footer-logo.png" alt="心加 Shinka">
+      </a>
+
+      <nav class="site-footer__nav" aria-label="Footer">
+        <div class="site-footer__col site-footer__col--main">
+          <a class="site-footer__link" href="concept.html">Concept</a>
+          <a class="site-footer__link" href="virtual-human.html">Virtual Human</a>
+          <a class="site-footer__link" href="news-list.html">News</a>
+          <a class="site-footer__link" href="company-information.html">Company Information</a>
+        </div>
+
+        <div class="site-footer__col site-footer__col--media">
+          <p class="site-footer__link">Media</p>
+          <ul class="site-footer__sub">
+            <li><a href="culture-column.html">Culture Column</a></li>
+            <li><a href="travel-guide.html">Travel Guide</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col site-footer__col--business">
+          <p class="site-footer__link">Businesses</p>
+          <ul class="site-footer__sub">
+            <li><a href="vacation-rental.html">Vacation Rentals &amp; Accommodation</a></li>
+            <li><a href="media-business.html">Media Business</a></li>
+            <li><a href="e-commerce.html">E-Commerce Business</a></li>
+            <li><a href="vacation-rental-management.html">Vacation Rental Management</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p class="site-footer__copy">© copyright 2026 shinka Inc.</p>
+      <ul class="site-footer__social">
+        <li><a href="index.html#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="index.html#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="index.html#" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" width="20" height="20"></a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+<script src="components/header/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* Component: vh-role */
+
+.vh-role {
+  padding: 113px 64px 112px;
+  background: var(--color-cream);
+  border-top: 1px solid #f3f4f6;
+}
+
+.vh-role__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.vh-role__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.75px;
+  text-align: center;
+  color: var(--color-ink);
+}
+
+.vh-role__title::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1.5px;
+  margin: 14px auto 0; /* 6px padding + 8px gap in Figma */
+  background: var(--color-ink);
+}
+
+.vh-role__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+.vh-role-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 294px;
+  padding: 41px;
+  background: #fff;
+  border: 1px solid rgba(229, 231, 235, 0.7);
+  border-radius: 2px;
+}
+
+.vh-role-card__no {
+  padding-bottom: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2.4px;
+  color: #9ca3af;
+}
+
+.vh-role-card__title {
+  padding-bottom: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: var(--color-ink);
+}
+
+.vh-role-card__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  color: var(--color-muted);
+}
+
+@media (max-width: 1024px) {
+  .vh-role__list {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 560px;
+  }
+
+  .vh-role-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .vh-role {
+    padding: 64px 20px;
+  }
+
+  .vh-role__inner {
+    gap: 40px;
+  }
+
+  .vh-role__title {
+    font-size: 26px;
+  }
+
+  .vh-role-card {
+    padding: 28px 24px;
+  }
+}

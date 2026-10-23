@@ -1,0 +1,20 @@
+/* Component: events (extends shared post-section) */
+
+.events {
+  --ps-bg: var(--color-cream);
+  --ps-py: 59px;
+  --ps-px: clamp(16px, 2.85vw, 41px);
+  --ps-grid: 1200px;
+  --ps-img: 233px;
+}
+
+/* Whole card is clickable: the title link stretches over the card */
+.events .post-card {
+  position: relative;
+}
+
+.events .post-card__title a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}

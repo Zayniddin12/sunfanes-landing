@@ -1,0 +1,17 @@
+/* Component: co-banner — page-banner with a darker overlay and the sign cropped from the photo */
+
+.co-banner::after {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.co-banner .page-banner__bg {
+  filter: blur(2px);
+}
+
+.co-banner .page-banner__bg img {
+  object-position: center 82%;
+}
+
+.co-banner .page-banner__crumbs [aria-current] {
+  color: #dfd7cf;
+}

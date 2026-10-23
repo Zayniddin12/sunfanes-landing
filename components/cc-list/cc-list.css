@@ -1,0 +1,141 @@
+/* Component: cc-list (card styles come from shared post-card) */
+
+.cc-list {
+  background: #fff;
+}
+
+.cc-list__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px clamp(20px, 8.34vw, 120px);
+}
+
+.cc-list__count {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.cc-list__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 36px;
+}
+
+.cc-card {
+  height: 100%;
+}
+
+.cc-card .post-card__media {
+  height: 183px;
+}
+
+.cc-card .post-card__body {
+  flex: 1;
+}
+
+.cc-card[hidden] {
+  display: none;
+}
+
+/* Pagination */
+.cc-pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cc-pager__arrow {
+  display: block;
+  width: 48px;
+  height: 34px;
+  transition: opacity 0.2s ease;
+}
+
+.cc-pager__arrow--prev {
+  transform: rotate(180deg);
+}
+
+.cc-pager__arrow:hover {
+  opacity: 0.7;
+}
+
+.cc-pager__page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 34px;
+  padding: 10px;
+  border: 1px solid var(--color-gold);
+  border-radius: 3px;
+  background: var(--color-header-bg);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--color-gold);
+  transition: opacity 0.2s ease;
+}
+
+.cc-pager__page:hover {
+  opacity: 0.7;
+}
+
+.cc-pager__page.is-active {
+  background: var(--color-gold);
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .cc-list__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cc-list__inner {
+    gap: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .cc-list__count {
+    font-size: 20px;
+  }
+
+  .cc-list__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cc-pager {
+    gap: 8px;
+  }
+
+  .cc-pager__arrow,
+  .cc-pager__page {
+    width: auto;
+    min-width: 40px;
+  }
+}
+
+/* Whole card is clickable through the title link */
+.cc-card {
+  position: relative;
+}
+
+.cc-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.cc-card:hover .post-card__title {
+  text-decoration: underline;
+}

@@ -1,0 +1,133 @@
+/* Component: cc-filter */
+
+.cc-filter {
+  display: flex;
+  justify-content: center;
+  padding: 32px 20px 0;
+  background: #fff;
+}
+
+.cc-filter__box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 1080px;
+  padding: 30px;
+  border: 1px solid var(--color-gold);
+  border-radius: 4px;
+}
+
+.cc-filter__cats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cc-filter__label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  color: var(--color-ink);
+}
+
+.cc-filter__pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.cc-pill {
+  padding: 6px 14px;
+  border: 1px solid var(--color-gold);
+  border-radius: 4px;
+  background: var(--color-header-bg);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-gold);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cc-pill:hover {
+  background: var(--color-cream);
+}
+
+.cc-pill.is-active {
+  background: var(--color-gold);
+  color: #fff;
+}
+
+/* Search */
+.cc-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cc-search__icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.cc-search__input {
+  width: 100%;
+  padding: 10px 97px 11px 41px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: normal;
+  color: #000;
+}
+
+.cc-search__input::placeholder {
+  color: #9ca3af;
+}
+
+.cc-search__input:focus {
+  outline: 2px solid var(--color-gold);
+  outline-offset: -1px;
+}
+
+.cc-search__btn {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 6.5px 16px 7.5px;
+  border: 0;
+  border-radius: 4px;
+  background: #000;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.cc-search__btn:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .cc-filter__box {
+    padding: 20px 16px;
+  }
+
+  .cc-search__input {
+    padding-right: 80px;
+    font-size: 14px;
+  }
+}

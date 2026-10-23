@@ -1,0 +1,106 @@
+/* Component: tg-list (card styles come from shared post-card) */
+
+.tg-list {
+  background: #fff;
+}
+
+.tg-list__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 60px clamp(20px, 2.78vw, 40px);
+}
+
+.tg-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.tg-sec__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+  color: #000;
+}
+
+.tg-sec__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 36px;
+  width: 100%;
+}
+
+.tg-card .post-card__media {
+  height: 183px;
+}
+
+.tg-card .post-card__body {
+  flex: 1;
+  justify-content: center;
+  min-height: 189px;
+}
+
+.tg-sec__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 228px;
+  height: 54px;
+  padding: 12px 64px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background: var(--color-gold);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.tg-sec__more:hover {
+  opacity: 0.88;
+}
+
+@media (max-width: 1024px) {
+  .tg-list__inner {
+    gap: 60px;
+  }
+
+  .tg-sec__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .tg-list__inner {
+    gap: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .tg-sec__title {
+    font-size: 24px;
+  }
+
+  .tg-sec__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Whole card is clickable through the title link */
+.tg-card {
+  position: relative;
+}
+
+.tg-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}

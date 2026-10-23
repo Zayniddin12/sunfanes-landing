@@ -1,0 +1,39 @@
+/* Component: nd-article — reuses cd-article + tgd-article; only the differences live here */
+
+.nd-article .cd-article__inner {
+  padding: 60px clamp(20px, 2.78vw, 40px);
+}
+
+/* Content column is 1200px wide */
+.nd-article .cd-article__content {
+  max-width: 1200px;
+}
+
+.nd-article .cd-article__date {
+  font-weight: 400;
+}
+
+.nd-article .cd-article__hero {
+  background: #f8f3ee;
+}
+
+/* Only the share block, pushed to the right */
+.nd-article .tgd-actions {
+  justify-content: flex-end;
+}
+
+/* Pager sits inside the content column, centred */
+.nd-article .cd-pager {
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .nd-article .cd-article__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .nd-article .tgd-actions {
+    justify-content: flex-start;
+  }
+}
