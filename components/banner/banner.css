@@ -1,0 +1,72 @@
+/* Component: banner */
+
+.biz-banner {
+  display: flex;
+  align-items: center;
+  min-height: 235px;
+  padding: 33px clamp(20px, 3.2vw, 46px);
+  background: #f7f7f7;
+}
+
+.biz-banner__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+  color: #000;
+}
+
+.biz-banner__crumbs {
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.biz-banner__crumbs span {
+  color: #4a4a4a;
+}
+
+.biz-banner__head {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.2;
+}
+
+.biz-banner__title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 1.8px;
+}
+
+.biz-banner__lead {
+  max-width: 585px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+}
+
+@media (max-width: 768px) {
+  .biz-banner {
+    min-height: 0;
+    padding-block: 28px 36px;
+  }
+
+  .biz-banner__inner {
+    gap: 18px;
+  }
+
+  .biz-banner__crumbs {
+    font-size: 14px;
+  }
+
+  .biz-banner__title {
+    font-size: 26px;
+    letter-spacing: 1.3px;
+  }
+
+  .biz-banner__lead {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}

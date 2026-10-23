@@ -1,10 +1,13 @@
-<!-- Component: page-banner (inner-page title banner with breadcrumb) -->
-<section class="page-banner" data-component="page-banner">
+<!-- Component: page-banner (inner-page title banner with image and breadcrumb) -->
+<section class="page-banner{{cls}}" data-component="page-banner">
   <div class="page-banner__bg">
-    <img src="assets/images/concept-banner.png" alt="" width="2172" height="724">
+    <img src="{{img}}" alt="" width="{{width}}" height="{{height}}">
   </div>
   <div class="page-banner__inner">
-    <p class="page-banner__crumbs"><a href="index.html#top">TOP</a> <span>/</span> <span>Concept</span></p>
-    <h1 class="page-banner__title">Concept</h1>
+    <p class="page-banner__crumbs"><a href="index.html#top">TOP</a> <span>/</span> <span{{aria}}>{{crumb}}</span></p>
+    <h1 class="page-banner__title">{{title}}</h1>
+{{#if lead}}
+    <p class="page-banner__lead">{{lead}}</p>
+{{/if}}
   </div>
 </section>

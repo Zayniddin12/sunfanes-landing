@@ -1,0 +1,214 @@
+{
+  "vacation": {
+    "hero": {
+      "img": "assets/images/biz-hero.jpg",
+      "alt": "Entrance hall of a SHINKA vacation rental with a potted tree and a wooden staircase"
+    },
+    "purpose": {
+      "title": "Our Purpose &amp; Background",
+      "sub": "Why SHINKA entered the accommodation business and how it connects to our brand philosophy.",
+      "lead": [
+        "Creating stays that make travel feel more effortless.",
+        "Away from the noise of the city, we create peaceful spaces where guests can unwind and clear their minds.",
+        "In today's information-filled world, what we truly need is not more stimulation, but a place where we can feel safe and at ease. SHINKA launched its vacation rental and accommodation business to offer just that — a comfortable retreat with room to breathe."
+      ],
+      "text": [
+        "Rather than simply renovating buildings, we create accommodations that preserve traditional craftsmanship and architectural beauty for future generations.",
+        "By respecting the character of historic Japanese townhouses and traditional homes, and removing unnecessary decoration, we bring together refined simplicity, peaceful surroundings, and a deep sense of comfort."
+      ]
+    },
+    "initiatives": {
+      "sub": "What we create, develop, and offer.",
+      "items": [
+        {
+          "img": "assets/images/biz-init-1.jpg",
+          "alt": "Restored traditional Japanese townhouse at dusk",
+          "label": "01 / Architecture",
+          "title": "Restoring Traditional Japanese Homes",
+          "text": [
+            "We carefully restore traditional Japanese townhouses and historic homes, improving their structural safety and insulation to modern standards while preserving the character of aged earthen walls and wooden beams.",
+            "Each renovation respects the property's history and local heritage, creating spaces that carry traditional architectural beauty into the next generation."
+          ]
+        },
+        {
+          "img": "assets/images/biz-init-2.jpg",
+          "alt": "Dining area with a wooden table and staircase",
+          "label": "02 / Service",
+          "title": "Thoughtfully Designed Spaces &amp; Services",
+          "text": [
+            "We combine convenient smart self-check-in with attentive support from a dedicated remote concierge, giving guests the privacy they value without sacrificing personal care.",
+            "Our approach delivers warm, high-quality hospitality even without face-to-face interaction."
+          ]
+        },
+        {
+          "img": "assets/images/biz-init-3.jpg",
+          "alt": "Traditional Japanese confectionery assortment",
+          "label": "03 / Experience",
+          "title": "Cultural Experiences with Local Artisans",
+          "text": [
+            "We collaborate with local tea ceremony practitioners, ceramic artisans, and traditional Japanese confectionery makers to offer exclusive private workshops for our guests.",
+            "Through carefully selected furnishings and special amenities, visitors can discover and experience the unique culture of each destination."
+          ]
+        }
+      ]
+    }
+  },
+  "media": {
+    "hero": {
+      "img": "assets/images/media-hero.jpg",
+      "alt": "Smartphones displaying SHINKA's travel articles"
+    },
+    "purpose": {
+      "title": "Our Purpose &amp; Vision",
+      "sub": "Why SHINKA is dedicated to media — Connecting our media initiatives with our brand philosophy.",
+      "lead": [
+        "Our approach is rooted in the belief that knowledge and discovery can enrich every travel experience.",
+        "Learning more about Japan helps travelers feel more confident, discover new places worth visiting, and appreciate the stories behind the sights they encounter. Our goal goes beyond providing a typical sightseeing guide. We aim to help visitors connect more deeply with Japan and make every moment of their journey more meaningful."
+      ],
+      "text": [
+        "Rather than simply gathering information from online sources, we focus on authentic, firsthand experiences. We visit destinations ourselves, meet local people, and listen to their stories. Through thoughtful storytelling, we share the history, cultural heritage, and traditions that make each place unique, reflecting SHINKA's refined and thoughtful approach to Japanese culture."
+      ]
+    },
+    "initiatives": {
+      "sub": "What we create, share, and develop.",
+      "items": [
+        {
+          "img": "assets/images/media-init-1.jpg",
+          "alt": "Social media apps on a smartphone screen",
+          "label": "01 / Social Media &amp; Web Articles",
+          "title": "Sharing Japanese Culture",
+          "text": [
+            "We introduce international travelers to Japan's culture, history, customs, cuisine, local communities, traditions, and everyday life through multilingual web articles and social media platforms such as Instagram and TikTok.",
+            "Our goal is to make Japan's rich culture accessible, engaging, and easy to understand."
+          ]
+        },
+        {
+          "img": "assets/images/media-init-2.jpg",
+          "alt": "Editors interviewing a local resident",
+          "label": "02 / Fieldwork &amp; Interviews",
+          "title": "Discovering Stories Firsthand",
+          "text": [
+            "Rather than relying solely on information available online, our editorial team visits destinations and speaks directly with local artisans and residents.",
+            "Through these firsthand encounters, we create carefully researched stories that capture the authentic atmosphere, local heritage, and traditions of each place."
+          ]
+        },
+        {
+          "img": "assets/images/media-init-3.jpg",
+          "alt": "Virtual human wearing a pink kimono",
+          "label": "03 / Virtual Human Collaboration",
+          "title": "Meet Our Virtual Human, “心カロ”",
+          "text": [
+            "Through our AI-powered virtual human, \"心カロ\", we provide helpful travel guidance and share engaging content on social media.",
+            "By connecting digital experiences with real-world discoveries, we bring Japan's unique culture and experiences closer to travelers."
+          ]
+        }
+      ]
+    }
+  },
+  "ec": {
+    "hero": {
+      "img": "assets/images/ec-hero.jpg",
+      "alt": "A parcel being handed over at a wooden doorway"
+    },
+    "purpose": {
+      "title": "Our Purpose &amp; Vision",
+      "sub": "Why SHINKA embraces e-commerce — Connecting our products with our brand philosophy.",
+      "lead": [
+        "We believe that the memories of a journey should live on long after the trip ends.",
+        "The comfort of a beautiful accommodation, the thoughtful amenities, and the atmosphere of a memorable stay should not be limited to the travel experience itself. We want our guests to bring those special moments into their everyday lives.",
+        "Our approach follows a simple cycle: Experience (Stay) → Rediscovery (E-Commerce) → Return Visit."
+      ],
+      "text": [
+        "We offer more than just products. Through carefully selected items, we bring you a lasting connection to local culture, exceptional Japanese craftsmanship, and the peaceful moments experienced during your stay."
+      ]
+    },
+    "initiatives": {
+      "sub": "What we create, offer, and develop.",
+      "items": [
+        {
+          "img": "assets/images/ec-init-1.jpg",
+          "alt": "Packaged amenity sachets",
+          "label": "01 / Amenity &amp; Living",
+          "title": "Thoughtful Amenities for Everyday Comfort",
+          "text": [
+            "Explore a collection of carefully selected shampoos, conditioners, premium textiles, and lifestyle essentials used in our vacation rentals and accommodations.",
+            "Bring the same comfort, quality, and relaxation you enjoyed during your stay into your own home."
+          ]
+        },
+        {
+          "img": "assets/images/ec-init-2.jpg",
+          "alt": "Japanese tea and a teapot with a packaged snack",
+          "label": "02 / Food &amp; Beverage",
+          "title": "Authentic Flavors of Japan",
+          "text": [
+            "We develop carefully selected food products inspired by local ingredients and culinary traditions, including ready-to-eat meals, teas, and seasonings.",
+            "Enjoy rich Japanese flavors and comforting dining experiences that bring a little taste of your journey to your everyday table."
+          ]
+        },
+        {
+          "img": "assets/images/ec-init-3.jpg",
+          "alt": "Craftsperson assembling a handmade product",
+          "label": "03 / Experience",
+          "title": "Craftsmanship &amp; Innovation",
+          "text": [
+            "Looking ahead, we plan to introduce everyday essentials and handcrafted products that showcase Japan's exceptional manufacturing techniques, traditional craftsmanship, and innovative technologies.",
+            "Our goal is to build a platform that brings authentic Japanese quality and craftsmanship to customers in Japan and around the world."
+          ]
+        }
+      ]
+    }
+  },
+  "vrm": {
+    "hero": {
+      "img": "assets/images/vrm-hero.jpg",
+      "alt": "Japanese-style room with a round window and wooden lattice screens"
+    },
+    "purpose": {
+      "title": "Our Purpose &amp; Vision",
+      "sub": "Why SHINKA is developing this service — Establishing quality standards through our own experience.",
+      "lead": [
+        "We believe in setting standards through firsthand experience, creating a future where travelers can confidently choose accommodations that meet SHINKA's quality standards.",
+        "Our approach to vacation rental management goes beyond simply handling daily operations. We begin by establishing exceptional quality standards at our own properties, paying close attention to every detail — from cleaning, amenities, and safety management to professional photography and multilingual guest support."
+      ],
+      "text": [
+        "Once our methods and standards are thoroughly tested and established, we aim to share them with like-minded accommodation owners and real estate partners. Our vision is to build a trusted network where guests can enjoy a comfortable, worry-free stay at any property that meets SHINKA's standards.",
+        "Note: This business is currently in the planning stage, with future expansion in mind."
+      ]
+    },
+    "initiatives": {
+      "sub": "What we create, offer, and develop.",
+      "items": [
+        {
+          "img": "assets/images/vrm-init-1.jpg",
+          "alt": "Clean bathroom amenities beside a bright window",
+          "label": "01 / Quality Standard",
+          "title": "Setting High Standards at Our Properties",
+          "text": [
+            "We develop and implement comprehensive operating standards covering cleaning procedures, linen and amenity management, safety and hygiene, and multilingual guest support.",
+            "These standards are carefully tested and refined at our own properties to ensure a consistently high-quality guest experience."
+          ]
+        },
+        {
+          "img": "assets/images/vrm-init-2.jpg",
+          "alt": "Businessperson reading a document at a desk",
+          "label": "02 / Value Creation",
+          "title": "Enhancing Property Branding &amp; Guest Experience",
+          "text": [
+            "We develop effective ways to enhance each property's appeal through thoughtful interior design, professional photography and video, and compelling property listings.",
+            "By highlighting the beauty and unique character of each space, we aim to create a distinctive identity and elevate the overall value of the accommodation experience."
+          ]
+        },
+        {
+          "img": "assets/images/vrm-init-3.jpg",
+          "alt": "A handshake over business documents",
+          "label": "03 / Future Expansion",
+          "title": "Expanding SHINKA Standards to Partner Properties",
+          "text": [
+            "In the future, we plan to extend our proven management practices to partner properties and local accommodation providers.",
+            "Our vision includes introducing SHINKA quality certification and comprehensive management support, building a trusted accommodation network that travelers can choose with confidence."
+          ]
+        }
+      ]
+    }
+  }
+}

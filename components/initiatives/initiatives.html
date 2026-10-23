@@ -1,0 +1,22 @@
+<!-- Component: initiatives (Our Key Initiatives — list of items) -->
+<section class="biz-initiatives" data-component="initiatives">
+  <div class="biz-initiatives__inner">
+    <header class="biz-head">
+      <h2 class="biz-head__title">Our Key Initiatives</h2>
+      <p class="biz-head__sub">{{sub}}</p>
+    </header>
+
+    <ul class="biz-initiatives__list">
+{{#each items}}
+      <li class="biz-item">
+        <div class="biz-item__media"><img src="{{img}}" alt="{{alt}}" width="400" height="240"></div>
+        <p class="biz-item__label">{{label}}</p>
+        <h3 class="biz-item__title">{{title}}</h3>
+        <div class="biz-item__text">
+          {{text}}
+        </div>
+      </li>
+{{/each}}
+    </ul>
+  </div>
+</section>
